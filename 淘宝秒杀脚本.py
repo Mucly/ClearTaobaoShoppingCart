@@ -59,7 +59,7 @@ if __name__ == "__main__":
     cur_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
     set_time = input(f"请输入抢购时间，格式如 {cur_time} :\n")
     # 时间格式："2018-09-06 11:20:00.000000"
-    chrome_browser = webdriver.Chrome()
+    chrome_browser = webdriver.Chrome()  # path形参缺省为环境变量 / 打包为exe后缺省为exe当前目录
     chrome_browser.maximize_window()
 
     login(chrome_browser)
