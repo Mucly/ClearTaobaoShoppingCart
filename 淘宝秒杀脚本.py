@@ -48,7 +48,7 @@ def buy(browser, buy_time):
                             browser.find_element_by_link_text('提交订单').click()
                             now1 = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')
                             print("抢购成功时间：%s" % now1)
-                            browser.close()
+                            browser.quit()
                             return 0
                     except:
                         print("再次尝试提交订单")
