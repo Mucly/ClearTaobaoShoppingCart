@@ -1,0 +1,7 @@
+﻿# 忽略的文件夹
+build
+__pycache__
+dist
+
+# 忽略的文件类型
+*.spec
